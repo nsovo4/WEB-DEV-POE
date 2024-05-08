@@ -9,9 +9,135 @@
 </head>
 
 <body>
-  Hello world
-  
-  <script src="script.js"></script>
+  <!-- Log in & Registration -->
+
+  <!-- Header -->
+  <!-- Header -->
+  <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+
+  <header>
+    <h1>WELCOME TO PAST TIME</h1>
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="Clothing.html">Clothing</a></li>
+        <li><a href="Shoes.html">Shoes</a></li>
+        <li><a href="Sale & Promo.html">Sales & Promotion</a></li>
+        <li><a href="Search.html">Search</a></li>
+        <li><a href="Profile.html">Profile</a></li>
+        <li><a href="Cart.html">Cart</a></li>
+      </ul>
+      <button type="button" class="btn_register">Login / Register</button>
+    </nav>
+  </header>
+
+  <div class="modal">
+    <i class="fa fa-close"></i>
+    <div class="modal_header">
+      <div class="btns">
+        <button type="submit" class="btn btn_login active">Login</button>
+        <button type="submit" class="btn btn_register">Register</button>
+      </div>
+    </div>
+    <div class="modal_body">
+      <h2>Login</h2>
+      <input type="text" placeholder="User Name or Email">
+      <input type="password" placeholder="Password">
+
+      <div class="content">
+        <div class="rem">
+          <input type="checkbox">
+          <label>Remember</label>
+        </div>
+        <a href="#">Forget Password</a>
+      </div>
+      <div class="modal_footer">
+        <button type="button" class="btn_login">Login</button>
+      </div>
+    </div>
+
+    <div class="modal_body active">
+      <h2>Register</h2>
+      <input type="text" placeholder="User Name">
+      <input type="text" placeholder="User Email">
+      <input type="password" placeholder="Password">
+
+      <div class="modal_footer">
+        <button type="button" class="btn_Register">Register</button>
+      </div>
+    </div>
+
+    <div class="blr hide"></div>
+  </div>
+
+  <div class="search-profile-cart">
+    <div class="search-bar">
+      <!-- Insert search bar code here -->
+    </div>
+    <div class="profile-icon">
+      <!-- Insert profile icon code here -->
+    </div>
+    <div class="cart-icon">
+      <!-- Insert cart icon code here -->
+    </div>
+  </div>
+
+
+  <!-- Main Content 
+      <div class="main-content">
+          <!-- Home Page Pictures 
+          <div class="home-pictures">
+              <img src="usedImg.png" alt="Picture 1" class="image1"/>
+              <img src="img2.jpg" alt="Picture 2" class="image2"/>
+              <img src="img3.jpg" alt="Picture 3" class="image3"/>
+
+              <div class="home-text">
+                  <h2>Welcome to Pastimes - Where Vintage Becomes Timeless!</h2>
+                  <p>Explore our collection of vintage clothing and shoes that will take you back in time.
+                    From retro classics to unique finds, we've got it all. Step into the past with Pastimes
+                    and make every outfit a statement!</p>
+              </div>
+            
+              <img src="img4.jpg" alt="Picture 4" class="image4"/>
+          </div>
+        
+          <!-- Slogan and Juicy Text -->
+
+  <!-- Insert other main content here -->
+
+
+
+  <!-- Footer -->
+
+
+  <script>
+
+    const btnEl = document.querySelectorAll(".btn");
+    const linksEl = document.querySelectorAll("ul li a");
+    const modalBody = document.querySelector(".modal_body");
+    const blrEl = document.querySelector(".blr");
+    const btnRegister = document.querySelector(".btn_register");
+    const modalEl = document.querySelector(".fa-close");
+    const closeBtn = document.querySelector(".fa-close");
+
+    //--------------------tabs---------------
+
+    btnEl.forEach((btn, indx) => {
+      btn.addEventListener("click", () => {
+        btn.classList.add("active");
+
+        //================Modal Body
+        modalBody.forEach((mov) => mov.classList.remove("active"));
+        modalBody[indx].classList.add("active");
+      });
+    });
+  </script>
+
+
+
 </body>
+<footer>
+  <p>&copy; 2024 Pastimes Vintage Clothing Shop</p>
+</footer>
 
 </html>

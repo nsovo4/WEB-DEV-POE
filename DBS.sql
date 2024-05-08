@@ -8,3 +8,21 @@ CREATE TABLE IF NOT EXISTS Users (
     email VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL
 );
+
+
+
+CREATE TABLE tblUser (
+  
+)
+
+CREATE TABLE tblAdmin (
+  
+)
+
+CREATE TABLE tblAorder (
+  
+)
+
+CREATE TABLE tblClothes (
+  
+)

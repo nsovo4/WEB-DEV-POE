@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes</title>
+    
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+        background-color: #fff;
+        color: #000;
+        padding: 50px 20px;
+    }
+
+    header h1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    nav li a.active {
+      color: orange;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+
+  </style>
+  
+</head>
+
+  
+<body>
+    <!-- Header -->
+   <!-- Header -->
+<header>
+    <h1>Shoes</h1>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Clothing.html">Clothing</a></li>
+          <li><a class="active" href="Shoes.html">Shoes</a></li>
+          <li><a href="Sale & Promo.html">Sales & Promotion</a></li>
+          <li><a href="Search.html">Search</a></li>
+          <li><a href="Profile.html">Profile</a></li>
+          <li><a href="Cart.html">Cart</a></li>
+        </ul>
+    </nav>
+  
+    <div class="search-profile-cart">
+        <div class="search-bar">
+            <!-- Insert search bar code here -->
+        </div>
+        <div class="profile-icon">
+            <!-- Insert profile icon code here -->
+        </div>
+        <div class="cart-icon">
+            <!-- Insert cart icon code here -->
+        </div>
+    </div>
+</header>
+      
+<body>
+    <?php include 'header.php'; ?>
+
+    <!-- Shoes Content -->
+    <div class="shoes-content">
+        <div class="shoe-item">
+            <img src="shoes1.jpg" alt="Shoe Item 1">
+        </div>
+        <div class="shoe-item">
+            <img src="img/shoe2.jpg" alt="Shoe Item 2">
+        </div>
+        <!-- Repeat for the rest of the images -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pastimes Vintage Clothing Shop</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

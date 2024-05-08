@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     background-color: #f4f4f4;
 }
 
@@ -15,19 +16,168 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    padding: 50px 20px;
 }
 
 header h1 {
     margin: 0;
+    text-align: center;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  border: 1px solid #ddd;
+  outline: none;
+  color: orange;
+  font-family: inherit;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.2s ease-in;
+}
+
+nav button:hover {
+  background-color: orange;
+  color: #000;
+}
+
+nav button:active {
+  transform: scale(0.98);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 450px;
+}
+
+.modal i {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.modal h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.btn {
+  outline: none;
+  width: 100%;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  background-color: #ddd;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn.active {
+  background-color: orange;
+  transform: translate(-3px);
+}
+
+.modal_body input {
+  width: 100%;
+  padding: 0.5rem 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.modal_body .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.modal_body .rem {
+  display: flex;
+  align-items: center;
+}
+
+.modal_body .content label {
+  margin-left: 10px;
+}
+
+.modal_body {
+  display: none;
+}
+
+.modal_body.active {
+  display: block;
+}
+
+.modal_footer button {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: orange;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.btn.active,
+ .modal_footer:button.active {
+  transform: scale(0.98);
+}
+
+.blr {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: blur(80px);
+}
+
+.blr.hide {
+  display: none;
+}
+
+
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 nav ul li {
@@ -37,52 +187,19 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
-/* Content Styles */
-.sales-promotion-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+nav li a.active {
+  color: orange;
 }
 
-.sale-item {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    padding: 20px;
-    width: 300px;
+.image1. img2. img3. img4 {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
 }
 
-.sale-item img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.sale-item h2 {
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-.sale-item p {
-    margin-top: 10px;
-}
-
-.sale-item button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.sale-item button:hover {
-    background-color: #45a049;
-}
 
 /* Footer Styles */
 footer {

@@ -3,16 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales & Promotions - Pastimes</title>
-    <link rel="stylesheet" href="css/styless.css">
+    <title>Sales & Promotions</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+        background-color: #fff;
+        color: #000;
+        padding: 50px 20px;
+    }
+
+    header h1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    nav li a.active {
+      color: orange;
+    }
+
+    .sales-promotion-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sale-item {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        padding: 20px;
+        width: 300px;
+    }
+
+    .sale-item img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .sale-item h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .sale-item p {
+        margin-top: 10px;
+    }
+
+    .sale-item button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .sale-item button:hover {
+        background-color: #45a049;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+
+  </style>
+  
 </head>
+  
 <body>
+
+  <header>
+      <h1>Sales & Promotions</h1>
+      <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Clothing.html">Clothing</a></li>
+              <li><a href="Shoes.html">Shoes</a></li>
+              <li><a class="active" href="Sale & Promo.html">Sales & Promotion</a></li>
+              <li><a href="Search.html">Search</a></li>
+              <li><a href="Profile.html">Profile</a></li>
+              <li><a href="Cart.html">Cart</a></li>
+          </ul>
+      </nav>
+  </header>
+  
     <?php include 'header.php'; ?>
 
     <!-- Sales & Promotions Content -->
     <div class="sales-promotion-content">
         <div class="sale-item">
-            <img src="img/sale1.jpg" alt="Sale Item 1">
+            <img src="floral-dress.jpg" alt="Sale Item 1">
             <h2>Floral Dress</h2>
             <p>Get this stunning floral dress at a discounted price. Limited time offer!</p>
             <p><strong>Original Price:</strong> R350</p>
@@ -20,7 +129,7 @@
             <button>Add to Cart</button>
         </div>
         <div class="sale-item">
-            <img src="img/sale2.jpg" alt="Sale Item 2">
+            <img src="leather-jacket.jpg" alt="Sale Item 2">
             <h2>Vintage Leather Jacket</h2>
             <p>Complete your retro look with this stylish vintage leather jacket. Grab it now!</p>
             <p><strong>Original Price:</strong> R900</p>
