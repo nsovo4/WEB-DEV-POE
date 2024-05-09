@@ -6,3 +6,7 @@ userData.txt file as a resource file --->
 
 <!-- Each time the script is executed the table will be deleted if it exists
 and reloaded with the data from the userData.txt file -->
+
+localStorage.setItem("data", userData.txt);
+
+localStorage.getItem("data");
