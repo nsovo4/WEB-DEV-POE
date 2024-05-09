@@ -208,13 +208,12 @@ nav li a.active {
   color: orange;
 }
 
-/*
-.image1. img2. img3. img4 {
-    width: 250px;
-    height: 250px;
-    margin-bottom: 20px;
+
+.container {
+    display: flex;
+    gap: 50px;
 }
-*/
+
 
 /* Footer Styles */
 footer {

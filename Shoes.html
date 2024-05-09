@@ -44,6 +44,10 @@
       color: orange;
     }
 
+    .container {
+      display: flex;
+    }
+
     footer {
         background-color: #333;
         color: #fff;
@@ -68,35 +72,18 @@
           <li><a href="Clothing.html">Clothing</a></li>
           <li><a class="active" href="Shoes.html">Shoes</a></li>
           <li><a href="Sale & Promo.html">Sales & Promotion</a></li>
-          <li><a href="Search.html">Search</a></li>
-          <li><a href="Profile.html">Profile</a></li>
           <li><a href="Cart.html">Cart</a></li>
         </ul>
     </nav>
-  
-    <div class="search-profile-cart">
-        <div class="search-bar">
-            <!-- Insert search bar code here -->
-        </div>
-        <div class="profile-icon">
-            <!-- Insert profile icon code here -->
-        </div>
-        <div class="cart-icon">
-            <!-- Insert cart icon code here -->
-        </div>
-    </div>
 </header>
       
 <body>
     <?php include 'header.php'; ?>
 
     <!-- Shoes Content -->
-    <div class="shoes-content">
+    <div class="container">
         <div class="shoe-item">
             <img src="shoes1.jpg" alt="Shoe Item 1">
-        </div>
-        <div class="shoe-item">
-            <img src="img/shoe2.jpg" alt="Shoe Item 2">
         </div>
         <!-- Repeat for the rest of the images -->
     </div>

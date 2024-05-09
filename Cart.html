@@ -4,71 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In - Pastimes</title>
-    <link rel="stylesheet" href="css/styles.css">
+
+   <style>
+     * {
+       margin: 0;
+       padding: 0;
+     }
+
+     header {
+         background-color: #fff;
+         color: #000;
+         padding: 50px 20px;
+     }
+
+     header h1 {
+         margin: 0;
+         text-align: center;
+     }
+
+     nav ul {
+       list-style-type: none;
+       display: flex;
+       width: 100%;
+       align-items: center;
+       justify-content: flex-end;
+     }
+
+     nav ul li {
+         display: inline;
+         margin-right: 20px;
+     }
+
+     nav ul li a {
+         text-decoration: none;
+         color: #000;
+     }
+
+     nav li a.active {
+       color: orange;
+     }
+
+     footer {
+         background-color: #333;
+         color: #fff;
+         padding: 10px 20px;
+         text-align: center;
+         bottom: 0;
+     }
+
+
+   </style>
+  
 </head>
   
 <body>
     <!-- Header -->
     <header>
-        <h1>Log In</h1>
+        <h1>Cart</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="Clothing.html">Clothing</a></li>
+                <li><a href="Shoes.html">Shoes</a></li>
+                <li><a href="Sale & Promo.html">Sales & Promotion</a></li>
+                <li><a class="active" href="Cart.html">Cart</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Log In Form -->
-  <div class="login-form">
-      <h2>Log In</h2>
-      <form method="post" action="login.php">
-          <?php include('errors.php'); ?>
-          <div class="input-group">
-              <label>Username</label>
-              <input type="text" name="username" value="<?php echo $username; ?>">
-          </div>
-          <div class="input-group">
-              <label>Password</label>
-              <input type="password" name="password">
-          </div>
-          <div class="input-group">
-              <button type="submit" class="btn" name="login_btn">Log In</button>
-          </div>
-          <p>
-              Not yet a member? <a href="register.php">Sign up</a>
-          </p>
-      </form>
-  </div>
-
-
-  <div class="register-form">
-      <h2>Register</h2>
-      <form method="post" action="registration.php">
-          <?php include('errors.php'); ?>
-          <div class="input-group">
-              <label>Username</label>
-              <input type="text" name="username" value="<?php echo $username; ?>">
-          </div>
-          <div class="input-group">
-              <label>Email</label>
-              <input type="email" name="email" value="<?php echo $email; ?>">
-          </div>
-          <div class="input-group">
-              <label>Password</label>
-              <input type="password" name="password">
-          </div>
-          <div class="input-group">
-              <label>Confirm Password</label>
-              <input type="password" name="confirm_password">
-          </div>
-          <div class="input-group">
-              <button type="submit" class="btn" name="register_btn">Register</button>
-          </div>
-          <p>
-              Already a member? <a href="login.php">Sign in</a>
-          </p>
-      </form>
-  </div>
+  
+    
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Pastimes Vintage Clothing Shop</p>
