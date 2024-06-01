@@ -53,36 +53,6 @@ nav button:active {
   transform: scale(0.98);
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 2rem;
-  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  width: 450px;
-  display: none;
-  z-index: 2;
-}
-
-.modal.active {
-  display: block;
-}
-
-.modal i {
-  position: absolute;
-  right: 25px;
-  top: 20px;
-  cursor: pointer;
-  font-size: 1.2rem;
-}
-
-.modal h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
 
 .btns {
   display: flex;
@@ -107,78 +77,9 @@ nav button:active {
   transform: scale(0.98);
 }
 
-.blr {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  filter: blur(80px);
-}
-
-.blr.hide {
-  display: none;
-}
-
 .btn.active {
   background-color: orange;
   transform: translate(-3px);
-}
-
-.modal_body {
-  display: none;
-}
-
-.modal_body.active {
-  display: block;
-}
-
-.modal_body input {
-  width: 100%;
-  padding: 0.5rem 0.8rem;
-  margin: 0.5rem 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-family: inherit;
-  font-size: 1rem;
-}
-
-.modal_body .content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0.5rem 0;
-}
-
-.modal_body .rem {
-  display: flex;
-  align-items: center;
-}
-
-.modal_body .content label {
-  margin-left: 10px;
-}
-
-.modal_body {
-  display: none;
-}
-
-.modal_body.active {
-  display: block;
-}
-
-.modal_footer button {
-  width: 100%;
-  outline: none;
-  border: none;
-  background-color: orange;
-  font-family: inherit;
-  font-size: 1rem;
-  padding: 0.7rem 1rem;
-  margin-top: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-  color: #fff;
 }
 
 .btn.active,

@@ -25,49 +25,8 @@
         <li><a href="Sale & Promo.html">Sales & Promotion</a></li>
         <li><a href="Cart.html">Cart</a></li>
       </ul>
-      <button type="button" class="btn_register">Login / Register</button>
     </nav>
   </header>
-
-  <div class="modal">
-    <i class="fa fa-close"></i>
-    <div class="modal_header">
-      <div class="btns">
-        <button type="submit" class="btn btn_login active">Login</button>
-        <button type="submit" class="btn btn_register">Register</button>
-      </div>
-    </div>
-    <div class="modal_body active">
-      <h2>Login</h2>
-      <input type="text" placeholder="User Name or Email">
-      <input type="password" placeholder="Password">
-
-      <div class="content">
-        <div class="rem">
-          <input type="checkbox">
-          <label>Remember</label>
-        </div>
-        <a href="#">Forget Password</a>
-      </div>
-      <div class="modal_footer">
-        <button type="button" class="btn_login">Login</button>
-      </div>
-    </div>
-
-    <div class="modal_body">
-      <h2>Register</h2>
-      <input type="text" placeholder="User Name">
-      <input type="text" placeholder="User Email">
-      <input type="password" placeholder="Password">
-
-      <div class="modal_footer">
-        <button type="button" class="btn_register">Register</button>
-      </div>
-    </div>
-  </div>
-
-    <div class="blr hide"></div>
-
 
   <!-- Main Content --->
       <div class="main-content">
@@ -97,41 +56,6 @@
   <footer>
     <p>&copy; 2024 Pastimes Vintage Clothing Shop</p>
   </footer>
-
-  <script>
-    "use strict";
-
-    const btnEl = document.querySelectorAll(".btn");
-    const linksEl = document.querySelectorAll("ul li a");
-    const modalBody = document.querySelectorAll(".modal_body");
-    const blrEl = document.querySelector(".blr"); 
-    const btnRegister = document.querySelector(".btn_register");
-    const modalEl = document.querySelector(".modal");
-    const closeBtn = document.querySelector(".fa-close");
-
-    //--------------------tabs---------------
-    btnEl.forEach((btn, indx) => {
-      btn.addEventListener("click", () => {
-        btnsEl.forEach((btnE) => btnE.classList.remove("active"));
-        btn.classList.add("active");
-
-
-        //================Modal Body
-        modalBody.forEach((mov) => mov.classList.remove("active"));
-        modalBody[indx].classList.add("active");
-      });
-    });
-
-    btnRegister.addEventListener("click", () => {
-      modalEl.classList.add("active");
-      blrEl.style.display = "block";
-    });
-
-    closeBtn.addEventListener("click", () => {
-      modalEl.classList.remove("active");
-      blrEl.style.display = "none";
-    });
-  </script>
 
 
 
