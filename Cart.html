@@ -50,6 +50,8 @@
          padding: 10px 20px;
          text-align: center;
          bottom: 0;
+         width: 100%;
+         position: fixed;
      }
 
 
@@ -72,7 +74,21 @@
         </nav>
     </header>
 
-  
+    <div class="cart-items">
+        <?php
+        session_start();
+
+        if (isset($_SESSION['cart']) && count($_SESSION['cart']) > 0) {
+            echo '<ul>';
+            foreach ($_SESSION['cart'] as $item) {
+                echo '<li class="cart-item">' . $item['product'] . ' - R' . $item['price'] . '</li>';
+            }
+            echo '</ul>';
+        } else {
+            echo '<p>Your cart is empty.</p>';
+        }
+        ?>
+    </div>
     
     <!-- Footer -->
     <footer>

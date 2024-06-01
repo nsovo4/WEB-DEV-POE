@@ -92,6 +92,9 @@
         color: #fff;
         padding: 10px 20px;
         text-align: center;
+        bottom: 0;
+        width: 100%;
+        position: fixed;
     }
 
 
@@ -113,8 +116,7 @@
           </ul>
       </nav>
   </header>
-  
-    <?php include 'header.php'; ?>
+
 
     <!-- Sales & Promotions Content -->
     <div class="sales-promotion-content">
@@ -124,7 +126,11 @@
             <p>Get this stunning floral dress at a discounted price. Limited time offer!</p>
             <p><strong>Original Price:</strong> R350</p>
             <p><strong>Sale Price:</strong> R210</p>
-            <button>Add to Cart</button>
+            <form method="post" action="cart.php">
+                <input type="hidden" name="product" value="Floral Dress">
+                <input type="hidden" name="price" value="210">
+                <button type="submit" name="add_to_cart">Add to Cart</button>
+            </form>
         </div>
         <div class="sale-item">
             <img src="leather-jacket.jpg" alt="Sale Item 2">
@@ -132,9 +138,13 @@
             <p>Complete your retro look with this stylish vintage leather jacket. Grab it now!</p>
             <p><strong>Original Price:</strong> R900</p>
             <p><strong>Sale Price:</strong> R600</p>
-            <button>Add to Cart</button>
+            <form method="post" action="cart.php">
+                <input type="hidden" name="product" value="Vintage Leather Jacket">
+                <input type="hidden" name="price" value="600">
+                <button type="submit" name="add_to_cart">Add to Cart</button>
+            </form>
         </div>
-        <!-- Add more sale items -->
+        <!-- Add more sale items with similar forms -->
     </div>
 
     <!-- Footer -->

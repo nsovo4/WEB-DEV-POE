@@ -54,6 +54,9 @@
         color: #fff;
         padding: 10px 20px;
         text-align: center;
+        bottom: 0;
+        width: 100%;
+        position: fixed;
     }
     
   </style>
@@ -76,28 +79,13 @@
         </ul>
     </nav>
   
-    <div class="search-profile-cart">
-        <div class="search-bar">
-            <!-- Insert search bar code here -->
-        </div>
-        <div class="profile-icon">
-            <!-- Insert profile icon code here -->
-        </div>
-        <div class="cart-icon">
-            <!-- Insert cart icon code here -->
-        </div>
-    </div>
 </header>
 
     <?php include 'header.php'; ?>
 
     <!-- Main Content -->
-    <div class="main-content">
+    
         <!-- Home Page Pictures -->
-        <div class="container">
-            <img src="clothing1.jpg" alt="Picture 1">
-            <img src="clothing2.jpg" alt="Picture 2">
-        </div>
         <!-- Slogan and Juicy Text -->
         <div class="home-text">
             <h2>Welcome to Pastimes - Where Vintage Becomes Timeless!</h2>
@@ -105,6 +93,19 @@
                From retro classics to unique finds, 
                we've got it all. Step into the past with Pastimes and make every outfit a statement!</p>
         </div>
+        <div class="main-content">
+            <div class="sale-item">
+                <img src="floral-dress.jpg" alt="Sale Item 1">
+                <h2>Floral Dress</h2>
+                <p>Get this stunning floral dress at a discounted price. Limited time offer!</p>
+                <p><strong>Original Price:</strong> R350</p>
+                <p><strong>Sale Price:</strong> R210</p>
+                <form method="post" action="cart.php">
+                    <input type="hidden" name="product" value="Floral Dress">
+                    <input type="hidden" name="price" value="210">
+                    <button type="submit" name="add_to_cart">Add to Cart</button>
+                </form>
+            </div>
         <!-- Insert other main content here -->
     </div>
 
