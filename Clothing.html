@@ -44,9 +44,57 @@
       color: orange;
     }
 
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sale-item {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        padding: 20px;
+        width: 300px;
+    }
+
+    .sale-item img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .sale-item h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .sale-item p {
+        margin-top: 10px;
+    }
+
+    .sale-item button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .sale-item button:hover {
+        background-color: #45a049;
+    }
+
     .container {
       display: flex;
       gap: 50px;
+    }
+
+    .home-text {
+        text-align: center;
+        font-size: 15px;
     }
 
     footer {
@@ -84,7 +132,7 @@
     <?php include 'header.php'; ?>
 
     <!-- Main Content -->
-    
+    <body>
         <!-- Home Page Pictures -->
         <!-- Slogan and Juicy Text -->
         <div class="home-text">
@@ -95,13 +143,117 @@
         </div>
         <div class="main-content">
             <div class="sale-item">
-                <img src="floral-dress.jpg" alt="Sale Item 1">
-                <h2>Floral Dress</h2>
-                <p>Get this stunning floral dress at a discounted price. Limited time offer!</p>
+                <img src="blue shirt.jpg" alt="Item 1">
+                <h2>Blue Men Shirt</h2>
+                <p>Get this stunning shirt at a discounted price. Limited time offer!</p>
                 <p><strong>Original Price:</strong> R350</p>
                 <p><strong>Sale Price:</strong> R210</p>
                 <form method="post" action="cart.php">
-                    <input type="hidden" name="product" value="Floral Dress">
+                    <input type="hidden" name="product" value="Clothing">
+                    <input type="hidden" name="price" value="210">
+                    <button type="submit" name="add_to_cart">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="sale-item">
+                <img src="colorful shirt.jpg" alt="Item 2">
+                <h2>Men Shirt</h2>
+                <p>Get this stunning shirt at a discounted price. Limited time offer!</p>
+                <p><strong>Original Price:</strong> R750</p>
+                <p><strong>Sale Price:</strong> R400</p>
+                <form method="post" action="cart.php">
+                    <input type="hidden" name="product" value="Clothing">
+                    <input type="hidden" name="price" value="210">
+                    <button type="submit" name="add_to_cart">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="sale-item">
+                <img src="kakhi shirt.jpg" alt="Item 3">
+                <h2>Kakhi Men Shirt</h2>
+                <p>Get this stunning kakhi shirt at a discounted price. Limited time offer!</p>
+                <p><strong>Original Price:</strong> R900</p>
+                <p><strong>Sale Price:</strong> R550</p>
+                <form method="post" action="cart.php">
+                    <input type="hidden" name="product" value="Clothing">
+                    <input type="hidden" name="price" value="210">
+                    <button type="submit" name="add_to_cart">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="sale-item">
+                <img src="pants1.jpg" alt="Item 4">
+                <h2>Green Men Pants</h2>
+                <p>Get these stunning pants at a discounted price. Limited time offer!</p>
+                <p><strong>Original Price:</strong> R850</p>
+                <p><strong>Sale Price:</strong> R600</p>
+                <form method="post" action="cart.php">
+                    <input type="hidden" name="product" value="Clothing">
+                    <input type="hidden" name="price" value="210">
+                    <button type="submit" name="add_to_cart">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="sale-item">
+                <img src="pants2.jpg" alt="Item 5">
+                <h2>Kakhi Woman Pants</h2>
+                <p>Get these stunning pants at a discounted price. Limited time offer!</p>
+                <p><strong>Original Price:</strong> R980</p>
+                <p><strong>Sale Price:</strong> R650</p>
+                <form method="post" action="cart.php">
+                    <input type="hidden" name="product" value="Clothing">
+                    <input type="hidden" name="price" value="210">
+                    <button type="submit" name="add_to_cart">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="sale-item">
+                <img src="pants3.jpg" alt="Item 6">
+                <h2>Black Men Pants</h2>
+                <p>Get these stunning pants at a discounted price. Limited time offer!</p>
+                <p><strong>Original Price:</strong> R1000</p>
+                <p><strong>Sale Price:</strong> R710</p>
+                <form method="post" action="cart.php">
+                    <input type="hidden" name="product" value="Clothing">
+                    <input type="hidden" name="price" value="210">
+                    <button type="submit" name="add_to_cart">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="sale-item">
+                <img src="pants4.jpeg" alt="Item 7">
+                <h2>Black Pants</h2>
+                <p>Get these stunning pants at a discounted price. Limited time offer!</p>
+                <p><strong>Original Price:</strong> R850</p>
+                <p><strong>Sale Price:</strong> R470</p>
+                <form method="post" action="cart.php">
+                    <input type="hidden" name="product" value="Clothing">
+                    <input type="hidden" name="price" value="210">
+                    <button type="submit" name="add_to_cart">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="sale-item">
+                <img src="pink shirt.jpg" alt="Item 8">
+                <h2>Pink Women Shirt</h2>
+                <p>Get this stunning shirt at a discounted price. Limited time offer!</p>
+                <p><strong>Original Price:</strong> R550</p>
+                <p><strong>Sale Price:</strong> R270</p>
+                <form method="post" action="cart.php">
+                    <input type="hidden" name="product" value="Clothing">
+                    <input type="hidden" name="price" value="210">
+                    <button type="submit" name="add_to_cart">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="sale-item">
+                <img src="red shirt.jpg" alt="Item 1">
+                <h2>Red Men Shirt</h2>
+                <p>Get this stunning shirt at a discounted price. Limited time offer!</p>
+                <p><strong>Original Price:</strong> R650</p>
+                <p><strong>Sale Price:</strong> R410</p>
+                <form method="post" action="cart.php">
+                    <input type="hidden" name="product" value="Clothing">
                     <input type="hidden" name="price" value="210">
                     <button type="submit" name="add_to_cart">Add to Cart</button>
                 </form>
