@@ -8,12 +8,6 @@ body {
     background-color: #f4f4f4;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 /* Header Styles */
 header {
     background-color: #fff;
@@ -45,61 +39,6 @@ nav {
   align-items: center;
 }
 
-nav button {
-  border: 1px solid #ddd;
-  outline: none;
-  color: orange;
-  font-family: inherit;
-  padding: 0.6rem 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: all 0.2s ease-in;
-}
-
-nav button:hover {
-  background-color: orange;
-  color: #000;
-}
-
-nav button:active {
-  transform: scale(0.98);
-}
-
-
-.btns {
-  display: flex;
-  justify-content: center;
-  margin: 1.5rem 0;
-}
-
-.btn {
-  outline: none;
-  width: 100%;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-family: inherit;
-  background-color: #ddd;
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.btn:active {
-  transform: scale(0.98);
-}
-
-.btn.active {
-  background-color: orange;
-  transform: translate(-3px);
-}
-
-.btn.active,
- .modal_footer:button.active {
-  transform: scale(0.98);
-}
-
 nav ul {
   list-style-type: none;
   display: flex;
@@ -121,13 +60,6 @@ nav ul li a {
 nav li a.active {
   color: orange;
 }
-
-
-.container {
-    display: flex;
-    gap: 50px;
-}
-
 
 /* Footer Styles */
 footer {
